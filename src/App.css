@@ -1,13 +1,10 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+  background-image: url("./iOS13_GreyWhite_FlareZephyr.jpeg");
+  background-attachment: fixed;
 }
 
 .App-header {
-  background-color: #282c34;
+  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,8 +12,38 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  font: "Lucida Grande";
+  animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
 }
 
+@keyframes fadein {
+  0% { opacity: 0; }
+  100%   { opacity: 1; }
+}
 .App-link {
-  color: #09d3ac;
+  color: #3c8f7e;
+}
+
+.App-Menu {
+  min-height: 50vh;
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.Exp-Background {
+  background-image: url("./iOS13_wallpaper_RedWhite_FlareZephyr.jpeg");
+  font-family: "Helvetica";
+  background-repeat: no-repeat;
+}
+
+.Exp-Project {
+  background-image: url("./jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
